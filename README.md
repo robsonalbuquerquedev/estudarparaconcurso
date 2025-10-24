@@ -1,37 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 EstudarParaConcurso
 
-## Getting Started
+> Um portal interativo de estudos voltado para candidatos de concursos públicos, desenvolvido com **Next.js 14**, **Tailwind CSS** e **Framer Motion**.  
+> O projeto organiza o conteúdo de forma clara e moderna, tornando o aprendizado mais acessível e visual.
 
-First, run the development server:
+---
 
+## 🚀 **Visão Geral**
+
+O **EstudarParaConcurso** é um site educacional que reúne conteúdos divididos por áreas de conhecimento, como:
+
+- 💻 **Noções de Informática**  
+- ⚖️ **Legislação Aplicada**  
+- 🧩 **Conhecimento Específico**  
+- ✍️ **Língua Portuguesa**  
+- 🛡️ **Integridade e Ética no Serviço Público**
+
+Cada página é construída para facilitar a leitura e o estudo, com linguagem simples, ícones ilustrativos e animações suaves.
+
+---
+
+## 🎯 **Objetivo do Projeto**
+
+Criar um ambiente de estudo digital que una **organização**, **clareza** e **motivação** — ajudando estudantes a se prepararem melhor para concursos públicos, com uma experiência visual agradável e responsiva.
+
+---
+
+## 🧩 **Tecnologias Utilizadas**
+
+| Tecnologia | Finalidade |
+|-------------|-------------|
+| [Next.js 14](https://nextjs.org/) | Framework React moderno e otimizado |
+| [Tailwind CSS](https://tailwindcss.com/) | Estilização responsiva e rápida |
+| [Framer Motion](https://www.framer.com/motion/) | Animações suaves e interativas |
+| [React Icons](https://react-icons.github.io/react-icons/) | Ícones temáticos e ilustrativos |
+
+---
+
+## ⚙️ **Como Executar o Projeto**
+
+### 1️⃣ Clonar o repositório
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/robsonalbuquerquedev/estudarparaconcurso.git
+cd estudarparaconcurso
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2️⃣ Instalar as dependências
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3️⃣ Executar o servidor de desenvolvimento
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Após isso, abra o navegador e acesse:
+```bash
+http://localhost:3000
+```
 
-## Learn More
+## 🖼️ Design e Responsividade
 
-To learn more about Next.js, take a look at the following resources:
+O portal é 100% responsivo, funcionando perfeitamente em:
+- 📱 Dispositivos móveis
+- 💻 Desktops
+- 🖥️ Tablets
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Cada página possui ícones temáticos, textos curtos e animações didáticas para melhorar a experiência do usuário.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Destaques
 
-## Deploy on Vercel
+- ✅ Design moderno e intuitivo
+- 📚 Conteúdo dividido por temas de concursos
+- 🖋️ Linguagem acessível e educativa
+- ⚡ Performance otimizada com Next.js
+- 🎨 Totalmente responsivo e animado
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ❤️ Créditos e Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# estudarparaconcurso
+Desenvolvido com dedicação por [Robson Albuquerque](https://github.com/robsonalbuquerquedev)
+
+## 📜 Licença
+
+Este projeto está sob a [licença MIT](LICENSE).
+
+Sinta-se à vontade para usar, estudar e aprimorar.
