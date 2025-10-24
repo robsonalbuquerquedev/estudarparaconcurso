@@ -54,6 +54,7 @@ export default function NocoesDeInformatica() {
             titulo: "Instalação e gerenciamento de programas",
             descricao:
                 "Instalar, desinstalar e configurar aplicativos do sistema.",
+            link: "/instalacao-e-gerenciamento-de-programas",
         },
         {
             icone: <FaFile className="text-pink-500" />,
