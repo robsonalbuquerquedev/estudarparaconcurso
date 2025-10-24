@@ -33,6 +33,7 @@ export default function NocoesDeInformatica() {
             titulo: "Gerenciamento de arquivos e pastas",
             descricao:
                 "Tipos de arquivos, extensões, pesquisa e localização de conteúdo.",
+            link: "/gerenciamento-de-arquivos-e-pastas",
         },
         {
             icone: <FaTools className="text-yellow-500" />,
