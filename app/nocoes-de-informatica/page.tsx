@@ -1,6 +1,7 @@
 // app/nocoes-de-informatica/page.tsx
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
@@ -25,6 +26,7 @@ export default function NocoesDeInformatica() {
             titulo: "Família de sistemas operacionais Microsoft Windows",
             descricao:
                 "Interface gráfica, elementos da área de trabalho, ajuda e suporte e atalhos de teclado.",
+            link: "/familiasomicrosoftwindows",
         },
         {
             icone: <FaFileAlt className="text-green-500" />,
@@ -133,21 +135,29 @@ export default function NocoesDeInformatica() {
 
                 {/* 🔹 Grade de Tópicos */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {topicos.map((topico, index) => (
+                    {topicos.map((item, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.1, duration: 0.4 }}
-                            className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition-all border border-gray-100"
+                            whileHover={{ scale: 1.03 }}
+                            className="transition-transform"
                         >
-                            <div className="flex items-center gap-3 mb-3 text-lg font-semibold text-gray-700">
-                                {topico.icone}
-                                {topico.titulo}
-                            </div>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                {topico.descricao}
-                            </p>
+                            {item.link ? (
+                                <Link
+                                    href={item.link}
+                                    target="_blank"
+                                    className="block bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg hover:bg-gray-50 transition"
+                                >
+                                    {item.icone}
+                                    <h3 className="font-bold text-lg text-gray-800">{item.titulo}</h3>
+                                    <p className="text-gray-600 text-sm mt-2">{item.descricao}</p>
+                                </Link>
+                            ) : (
+                                <div className="bg-white p-5 rounded-xl shadow-md border border-gray-200 opacity-70">
+                                    {item.icone}
+                                    <h3 className="font-bold text-lg text-gray-800">{item.titulo}</h3>
+                                    <p className="text-gray-600 text-sm mt-2">{item.descricao}</p>
+                                </div>
+                            )}
                         </motion.div>
                     ))}
                 </div>
