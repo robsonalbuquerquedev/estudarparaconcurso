@@ -47,6 +47,7 @@ export default function NocoesDeInformatica() {
             titulo: "Backup e gerenciamento de impressão",
             descricao:
                 "Criação de cópias de segurança e configuração de impressoras.",
+            link: "/backup-e-gerenciamento-de-impressao",
         },
         {
             icone: <FaArchive className="text-orange-500" />,
