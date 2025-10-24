@@ -40,6 +40,7 @@ export default function NocoesDeInformatica() {
             titulo: "Configurações e Painel de Controle",
             descricao:
                 "Solução de problemas e ajustes gerais do sistema.",
+            link: "/configuracoes-e-painel-de-controle",
         },
         {
             icone: <FaPrint className="text-purple-500" />,
