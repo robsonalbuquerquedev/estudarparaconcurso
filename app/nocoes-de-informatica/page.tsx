@@ -60,6 +60,7 @@ export default function NocoesDeInformatica() {
             icone: <FaFile className="text-pink-500" />,
             titulo: "Compactação e extração de arquivos ZIP",
             descricao: "Criação, extração e manipulação de arquivos compactados.",
+            link: "/compactacao-e-extracao-de-arquivos-zip",
         },
         {
             icone: <FaPaintBrush className="text-sky-500" />,
