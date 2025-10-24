@@ -1,65 +1,109 @@
+// app/page.tsx
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import {
+  FaLaptopCode,
+  FaGavel,
+  FaBookOpen,
+  FaShieldAlt,
+  FaBrain,
+} from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex flex-col items-center text-center px-4 sm:px-6 py-20">
+      {/* 🔹 Seção principal (Hero Section) */}
+      <motion.section
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-6xl flex flex-col-reverse lg:flex-row items-center justify-center gap-10"
+      >
+        {/* 🧠 Conteúdo textual */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4 leading-tight">
+            Estudar<span className="text-blue-600">ParaConcurso</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="text-gray-600 text-base sm:text-lg mb-8 px-2 sm:px-0">
+            Seu portal de estudos completo, com conteúdos organizados por área
+            de conhecimento. Aprenda de forma simples, visual e eficaz tudo o
+            que precisa para sua aprovação. 🚀
           </p>
+
+          {/* 🧭 Botões de navegação */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+            <Link
+              href="/nocoes-de-informatica"
+              className="bg-blue-600 text-white px-4 py-3 rounded-xl font-medium shadow-md hover:bg-blue-700 transition flex items-center gap-2"
+            >
+              <FaLaptopCode /> Noções de Informática
+            </Link>
+            <Link
+              href="/integridade"
+              className="bg-green-600 text-white px-4 py-3 rounded-xl font-medium shadow-md hover:bg-green-700 transition flex items-center gap-2"
+            >
+              <FaShieldAlt /> Integridade
+            </Link>
+            <Link
+              href="/legislacao-aplicada"
+              className="bg-indigo-600 text-white px-4 py-3 rounded-xl font-medium shadow-md hover:bg-indigo-700 transition flex items-center gap-2"
+            >
+              <FaGavel /> Legislação Aplicada
+            </Link>
+            <Link
+              href="/conhecimento-especifico"
+              className="bg-yellow-500 text-white px-4 py-3 rounded-xl font-medium shadow-md hover:bg-yellow-600 transition flex items-center gap-2"
+            >
+              <FaBrain /> Conhecimento Específico
+            </Link>
+            <Link
+              href="/lingua-portuguesa"
+              className="bg-pink-500 text-white px-4 py-3 rounded-xl font-medium shadow-md hover:bg-pink-600 transition flex items-center gap-2"
+            >
+              <FaBookOpen /> Língua Portuguesa
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* 🎨 Imagem ilustrativa */}
+        <div className="w-full lg:w-1/2 flex justify-center">
+          <Image
+            src="/home-banner.png"
+            alt="Estudante aprendendo online"
+            width={480}
+            height={480}
+            priority
+            className="rounded-2xl shadow-lg max-w-[300px] sm:max-w-[380px] lg:max-w-[480px] h-auto"
+          />
         </div>
-      </main>
-    </div>
+      </motion.section>
+
+      {/* 🔹 Seção de destaque */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6, duration: 1 }}
+        className="mt-20 max-w-4xl text-gray-700 px-2"
+      >
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800">
+          🌟 Por que estudar aqui?
+        </h2>
+        <p className="text-base sm:text-lg leading-relaxed mb-6">
+          Porque aprender é mais fácil quando o conteúdo está{" "}
+          <strong>organizado</strong>, <strong>bonito</strong> e{" "}
+          <strong>direto ao ponto</strong>.
+          Aqui você encontra explicações claras, resumos ilustrados e uma
+          linguagem acessível que transforma o estudo em algo prazeroso.
+        </p>
+        <p className="italic text-gray-600 text-sm sm:text-base">
+          “O sucesso nasce do esforço diário. Um pouco de estudo hoje é o passo
+          para a aprovação amanhã.”
+        </p>
+      </motion.section>
+    </main>
   );
 }
