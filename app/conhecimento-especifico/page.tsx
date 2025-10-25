@@ -35,6 +35,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "2. Sistemas Operacionais",
             descricao:
                 "Arquitetura, funções principais, instalação e configuração de sistemas Windows e Linux, comandos básicos, gerenciamento de usuários, permissões e processos.",
+            link: "/sistemas-operacionais",
         },
         {
             icone: <FaCode className="text-purple-600" />,
