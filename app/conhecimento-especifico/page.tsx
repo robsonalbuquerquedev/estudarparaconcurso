@@ -70,6 +70,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "7. Segurança da Informação",
             descricao:
                 "Princípios de confidencialidade, integridade e disponibilidade, criptografia (SSL/TLS), firewalls, antivírus, ataques cibernéticos e políticas de backup e recuperação.",
+            link: "/seguranca-da-informacao",
         },
         {
             icone: <FaCogs className="text-orange-600" />,
