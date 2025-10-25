@@ -56,6 +56,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "5. Banco de Dados",
             descricao:
                 "Conceitos básicos (tabelas, campos, chaves), comandos SQL (SELECT, INSERT, UPDATE, DELETE), MySQL, PostgreSQL, backup, restauração e introdução ao NoSQL (MongoDB).",
+            link: "/banco-de-dados",
         },
         {
             icone: <FaNetworkWired className="text-teal-600" />,
