@@ -57,6 +57,7 @@ export default function Integridade() {
             titulo: "Lei Federal nº 12.527, de 18 de novembro de 2011",
             descricao:
                 "Lei de Acesso à Informação, que assegura o direito fundamental de acesso às informações públicas.",
+            link: "/lei-federal-n-12527",
         },
         {
             icone: <FaHandsHelping className="text-pink-600" />,
