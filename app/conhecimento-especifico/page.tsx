@@ -119,6 +119,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "14. Manutenção de Computadores e Periféricos",
             descricao:
                 "Diagnóstico de hardware, substituição de peças, montagem e desmontagem de PCs, manutenção de impressoras, scanners e dispositivos móveis.",
+            link: "/manutencao-de-computadores-e-perifericos",
         },
     ];
 
