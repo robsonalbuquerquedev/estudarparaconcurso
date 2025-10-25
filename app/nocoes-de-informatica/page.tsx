@@ -74,6 +74,7 @@ export default function NocoesDeInformatica() {
             titulo: "Aplicativos de escritório",
             descricao:
                 "Softwares livres e proprietários para produtividade.",
+            link: "/aplicativos-de-escritorio",
         },
         {
             icone: <FaFileWord className="text-blue-600" />,
