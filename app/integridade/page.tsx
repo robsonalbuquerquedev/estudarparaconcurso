@@ -50,6 +50,7 @@ export default function Integridade() {
             titulo: "Lei Federal nº 13.709, de 14 de agosto de 2018",
             descricao:
                 "Lei Geral de Proteção de Dados Pessoais (LGPD), que regula o tratamento de dados pessoais e garante a privacidade e a segurança das informações.",
+            link: "/lei-federal-n-13709",
         },
         {
             icone: <FaGavel className="text-blue-800" />,
