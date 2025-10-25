@@ -139,6 +139,42 @@ export default function QuestoesSistemasOperacionais() {
             resposta: "Errado",
             fonte: "CESPE / CNPQ",
         },
+        {
+            texto: "Dentre as opções do menu desligar do Windows, qual delas deixa o computador em estado de espera, desligando momentaneamente o monitor, mas mantendo todos os programas em andamento ativos.",
+            alternativas: ["Bloquear", "Desligar", "Reiniciar", "Suspender", "Fazer Logoff"],
+            resposta: "Suspender",
+            fonte: "BRAVO / INÉDITA / 2025",
+        },
+        {
+            texto: "Entre as maneiras de desligar um computador que utiliza o Microsoft Windows 10, existe uma em que o consumo de energia é muito baixo e o computador é iniciado mais rapidamente, retornando para o ponto em que parou antes do desligamento. Esse estado, disponível em qualquer computador com o Windows 10, é conhecido como:",
+            alternativas: ["Adormecimento", "Desconexão", "Desligamento Completo", "Reinício", "Suspensão"],
+            resposta: "Suspensão",
+            fonte: "BRAVO / INÉDITA / 2025",
+        },
+        {
+            texto: "O recurso do Windows 10 que, quando acionado, mantém o computador ligado como baixo consumo de energia e com o monitor desligado é chamado:",
+            alternativas: ["Suspender", "Repousar", "Desligar", "Reiniciar", "Desconectar"],
+            resposta: "Suspender",
+            fonte: "BRAVO / INÉDITA / 2025",
+        },
+        {
+            texto: "A opção Hibernar ao solicitar para desligar o computador corresponde a qual operação abaixo no Windows:",
+            alternativas: ["coloca a área de trabalho bloqueada", "desliga o computador e salva tudo o que se estava fazendo no HD, recuperando ao ligá-lo novamente", "ativa o serviço de proteção de tela", "reinicia o computador após alguns minutos", "desliga o computador após alguns minutos"],
+            resposta: "desliga o computador e salva tudo o que se estava fazendo no HD, recuperando ao ligá-lo novamente",
+            fonte: "BRAVO / INÉDITA / 2025",
+        },
+        {
+            texto: "Ao desligar o computador, o usuário do Wndows pode escolher a opção a ser usada. Se a opção for HIBERNAR, é correto afirmar que o computador:",
+            alternativas: ["Não será desligado, de modo que, ao acionar o mouse ou teclado, a exibição da área de trabalho e os programas ativos não serão salvos, ou seja, serão perdidos", "Não será desligado de modo que, ao acionar o mouse ou teclado, a área de trabalho e os programas ativos serão exibidos exatamente como estavam antes de hibernar", "será desligado de modo que, quando for reiniciado, a exibição da área de trabalho e os programas ativos não serão salvos, ou seja, serão perdidos", "será desligado de modo que, quando for reiniciado a exibição da área de trabalho e os programas ativos serão exibidos exatamente como estavam antes de hibernar"],
+            resposta: "será desligado de modo que, quando for reiniciado a exibição da área de trabalho e os programas ativos serão exibidos exatamente como estavam antes de hibernar",
+            fonte: "BRAVO / INÉDITA / 2025",
+        },
+        {
+            texto: "Que recurso do sistema Operacional Windows permite desligar o computador, salvando os programas em execução, sem perder as informações que não foram salvas?",
+            alternativas: ["Particionador de disco", "Placa Ethernet", "Hibernar", "Protocolo TCP/IP", "Banco de dados"],
+            resposta: "Hibernar",
+            fonte: "BRAVO / INÉDITA / 2025",
+        },
     ];
 
     const [questoes, setQuestoes] = useState(
