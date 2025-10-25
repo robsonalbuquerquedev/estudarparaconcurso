@@ -109,6 +109,7 @@ export default function NocoesDeInformatica() {
             titulo: "Serviços de correio eletrônico",
             descricao:
                 "Envio, recebimento e organização de mensagens.",
+            link: "/servicos-de-correio-eletronico",
         },
     ];
 
