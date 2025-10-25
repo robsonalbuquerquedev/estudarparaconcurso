@@ -91,6 +91,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "10. Redes Sem Fio e Segurança",
             descricao:
                 "Redes Wi-Fi (802.11a/b/g/n/ac), configuração de roteadores, segurança (WPA2, WPA3), VPNs e diagnóstico de redes sem fio.",
+            link: "/redes-sem-fio-e-seguranca",
         },
         {
             icone: <FaServer className="text-gray-700" />,
