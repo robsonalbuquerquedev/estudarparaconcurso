@@ -49,6 +49,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "4. Desenvolvimento Web",
             descricao:
                 "Fundamentos de HTML, CSS e JavaScript, design responsivo, frameworks (Bootstrap), back-end com PHP ou Node.js, e conceitos de APIs e REST.",
+            link: "/desenvolvimento-web",
         },
         {
             icone: <FaDatabase className="text-emerald-600" />,
