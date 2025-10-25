@@ -95,6 +95,7 @@ export default function NocoesDeInformatica() {
             titulo: "Gerador de apresentação",
             descricao:
                 "Criação de slides, animações e exportação em PDF.",
+            link: "/gerador-de-apresentacao",
         },
         {
             icone: <FaGlobe className="text-blue-400" />,
