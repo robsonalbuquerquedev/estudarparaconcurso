@@ -1,6 +1,8 @@
 // app/integridade/page.tsx
 "use client";
 
+import CardAnimado from "../components/CardAnimado";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
@@ -20,6 +22,7 @@ export default function Integridade() {
             titulo: "Decreto Federal nº 11.529, de 16 de maio de 2023",
             descricao:
                 "Institui o Sistema de Integridade, Transparência e Acesso à Informação da Administração Pública Federal e define a Política de Transparência e Acesso à Informação da Administração Pública Federal.",
+            link: "/decreto-federal-n-11529",
         },
         {
             icone: <FaScroll className="text-yellow-600" />,
@@ -93,21 +96,15 @@ export default function Integridade() {
                 {/* 🔹 Lista de Decretos */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {decretos.map((item, index) => (
-                        <motion.div
+                        <CardAnimado
                             key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.1, duration: 0.4 }}
-                            className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition-all border border-gray-100"
-                        >
-                            <div className="flex items-center gap-3 mb-3 text-lg font-semibold text-gray-700">
-                                {item.icone}
-                                {item.titulo}
-                            </div>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                {item.descricao}
-                            </p>
-                        </motion.div>
+                            icone={item.icone}
+                            titulo={item.titulo}
+                            descricao={item.descricao}
+                            variant="default"
+                            link={item.link}
+                            index={index}
+                        />
                     ))}
                 </div>
             </section>
