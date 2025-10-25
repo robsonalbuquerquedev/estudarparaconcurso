@@ -29,6 +29,7 @@ export default function Integridade() {
             titulo: "Decreto Federal nº 1.171, de 22 de junho de 1994",
             descricao:
                 "Aprova o Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal.",
+            link: "/decreto-federal-n-1171",
         },
         {
             icone: <FaUserShield className="text-purple-600" />,
