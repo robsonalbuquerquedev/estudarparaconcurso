@@ -1,6 +1,7 @@
 // app/nocoes-de-informatica/page.tsx
 "use client";
 
+import CardAnimado from "../components/CardAnimado";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -148,29 +149,15 @@ export default function NocoesDeInformatica() {
                 {/* 🔹 Grade de Tópicos */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {topicos.map((item, index) => (
-                        <motion.div
+                        <CardAnimado
                             key={index}
-                            whileHover={{ scale: 1.03 }}
-                            className="transition-transform"
-                        >
-                            {item.link ? (
-                                <Link
-                                    href={item.link}
-                                    target="_blank"
-                                    className="block bg-white p-5 rounded-xl shadow-md border border-gray-200 hover:shadow-lg hover:bg-gray-50 transition"
-                                >
-                                    {item.icone}
-                                    <h3 className="font-bold text-lg text-gray-800">{item.titulo}</h3>
-                                    <p className="text-gray-600 text-sm mt-2">{item.descricao}</p>
-                                </Link>
-                            ) : (
-                                <div className="bg-white p-5 rounded-xl shadow-md border border-gray-200 opacity-70">
-                                    {item.icone}
-                                    <h3 className="font-bold text-lg text-gray-800">{item.titulo}</h3>
-                                    <p className="text-gray-600 text-sm mt-2">{item.descricao}</p>
-                                </div>
-                            )}
-                        </motion.div>
+                            icone={item.icone}
+                            titulo={item.titulo}
+                            descricao={item.descricao}
+                            variant="primary"
+                            link={item.link}
+                            index={index}
+                        />
                     ))}
                 </div>
             </section>
