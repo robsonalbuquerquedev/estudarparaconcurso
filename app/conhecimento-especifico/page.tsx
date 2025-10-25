@@ -42,6 +42,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "3. Desenvolvimento de Software",
             descricao:
                 "Lógica de programação, variáveis, operadores, estruturas de controle, algoritmos e estruturas de dados (listas, filas, pilhas), linguagens populares (Python, JavaScript, PHP), scripts e Git.",
+            link: "/desenvolvimento-de-software",
         },
         {
             icone: <FaLaptopCode className="text-indigo-600" />,
