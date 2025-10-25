@@ -2,7 +2,6 @@
 "use client";
 
 import CardAnimado from "../components/CardAnimado";
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
