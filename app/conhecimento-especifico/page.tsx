@@ -77,6 +77,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "8. Instalação e Configuração de Software",
             descricao:
                 "Instalação e atualização de sistemas e aplicativos, aplicação de patches, solução de compatibilidade, ferramentas de produtividade e compliance de software.",
+            link: "/instalacao-e-configuracao-de-software",
         },
         {
             icone: <FaHeadset className="text-yellow-600" />,
