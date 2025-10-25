@@ -64,6 +64,7 @@ export default function Integridade() {
             titulo: "Portaria MGI nº 6.719, de 13 de setembro de 2024",
             descricao:
                 "Institui o Plano Federal de Prevenção e Enfrentamento do Assédio e da Discriminação na Administração Pública Federal Direta, suas Autarquias e Fundações.",
+            link: "/portaria-mgi-n-6719",
         },
     ];
 
