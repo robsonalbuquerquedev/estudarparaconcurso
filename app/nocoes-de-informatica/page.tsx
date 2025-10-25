@@ -102,6 +102,7 @@ export default function NocoesDeInformatica() {
             titulo: "Navegadores e serviços da Web",
             descricao:
                 "Uso de navegadores, buscas online e correio eletrônico.",
+            link: "/navegadores-e-servicos-da-web",
         },
         {
             icone: <FaEnvelope className="text-red-500" />,
