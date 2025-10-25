@@ -112,6 +112,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "13. Documentação e Gestão de TI",
             descricao:
                 "Elaboração de relatórios técnicos, inventário de hardware e software, controle de chamados (GLPI, OTRS) e indicadores de desempenho (KPIs, SLAs).",
+            link: "/documentacao-e-gestao-de-ti",
         },
         {
             icone: <FaTools className="text-green-700" />,
