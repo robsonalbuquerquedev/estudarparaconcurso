@@ -17,6 +17,7 @@ export default function Header() {
         { name: "Integridade", path: "/integridade" },
         { name: "Legislação Aplicada", path: "/legislacao-aplicada" },
         { name: "Conhecimento Específico", path: "/conhecimento-especifico" },
+        { name: "Língua Portuguesa", path: "/lingua-portuguesa" },
         { name: "Quiz - Sistemas Operacionais", path: "/quiz-sistemas-operacionais" },
     ];
 
