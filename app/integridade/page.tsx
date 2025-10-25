@@ -36,6 +36,7 @@ export default function Integridade() {
             titulo: "Decreto Federal nº 12.122, de 30 de julho de 2024",
             descricao:
                 "Institui o Programa Federal de Prevenção e Enfrentamento do Assédio e da Discriminação.",
+            link: "/decreto-federal-n-12122",
         },
         {
             icone: <FaBalanceScale className="text-green-600" />,
