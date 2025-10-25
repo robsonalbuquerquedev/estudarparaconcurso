@@ -67,6 +67,7 @@ export default function NocoesDeInformatica() {
             titulo: "Aplicativos do Windows",
             descricao:
                 "Bloco de Notas, Paint, WordPad e Mapa de Caracteres.",
+            link: "/aplicativos-do-windows",
         },
         {
             icone: <FaFileWord className="text-indigo-500" />,
