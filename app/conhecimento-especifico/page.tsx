@@ -63,6 +63,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "6. Redes de Computadores",
             descricao:
                 "Fundamentos de redes (LAN, WAN, MAN, PAN), topologias, dispositivos (switch, roteador, modem), endereçamento IPv4/IPv6, DNS, DHCP e protocolos (TCP/IP, HTTP, FTP).",
+            link: "/redes-de-computadores",
         },
         {
             icone: <FaLock className="text-red-600" />,
