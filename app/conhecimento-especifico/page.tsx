@@ -98,6 +98,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "11. Infraestrutura de Redes",
             descricao:
                 "Cabeamento estruturado, montagem de redes locais, configuração de switches e roteadores, solução de problemas e ferramentas de monitoramento (Wireshark, Zabbix).",
+            link: "/infraestrutura-de-redes",
         },
         {
             icone: <FaCloud className="text-cyan-600" />,
