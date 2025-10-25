@@ -1,6 +1,7 @@
 // app/conhecimento-especifico/page.tsx
 "use client";
 
+import CardAnimado from "../components/CardAnimado";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
@@ -27,6 +28,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "1. Fundamentos de Informática",
             descricao:
                 "Componentes de hardware (placa-mãe, processador, memória, discos, periféricos), tipos de memória (RAM, ROM, cache), sistemas de numeração (binário, hexadecimal, octal) e conceitos de software (sistema operacional, aplicativos, drivers).",
+            link: "/fundamentos-de-Informatica",
         },
         {
             icone: <FaWindows className="text-sky-600" />,
@@ -142,19 +144,15 @@ export default function ConhecimentoEspecifico() {
                 {/* 🔹 Lista de Tópicos */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {topicos.map((item, index) => (
-                        <motion.div
+                        <CardAnimado
                             key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.1, duration: 0.4 }}
-                            className="bg-white rounded-2xl shadow-md p-5 hover:shadow-xl transition-all border border-gray-100"
-                        >
-                            <div className="flex items-center gap-3 mb-3 text-lg font-semibold text-gray-700">
-                                {item.icone}
-                                {item.titulo}
-                            </div>
-                            <p className="text-gray-600 text-sm leading-relaxed">{item.descricao}</p>
-                        </motion.div>
+                            icone={item.icone}
+                            titulo={item.titulo}
+                            descricao={item.descricao}
+                            variant="primary"
+                            link={item.link}
+                            index={index}
+                        />
                     ))}
                 </div>
             </section>
