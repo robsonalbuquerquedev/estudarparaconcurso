@@ -84,6 +84,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "9. Suporte Técnico",
             descricao:
                 "Atendimento ao usuário, diagnóstico de hardware e software, ferramentas de suporte remoto (TeamViewer, AnyDesk) e manutenção preventiva e corretiva.",
+            link: "/suporte-tecnico",
         },
         {
             icone: <FaWifi className="text-blue-500" />,
