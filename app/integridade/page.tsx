@@ -43,6 +43,7 @@ export default function Integridade() {
             titulo: "Decreto Federal nº 9.203, de 22 de novembro de 2017",
             descricao:
                 "Dispõe sobre a política de governança da administração pública federal direta, autárquica e fundacional.",
+            link: "/decreto-federal-n-9203",
         },
         {
             icone: <FaFileSignature className="text-red-600" />,
