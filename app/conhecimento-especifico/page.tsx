@@ -105,6 +105,7 @@ export default function ConhecimentoEspecifico() {
             titulo: "12. Virtualização e Cloud Computing",
             descricao:
                 "Conceitos de virtualização, hypervisors, máquinas virtuais (VirtualBox, VMware), e fundamentos da computação em nuvem (AWS, Google Cloud, Azure).",
+            link: "/virtualizacao-e-cloud-computing",
         },
         {
             icone: <FaClipboardList className="text-pink-600" />,
