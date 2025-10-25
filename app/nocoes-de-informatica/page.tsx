@@ -88,6 +88,7 @@ export default function NocoesDeInformatica() {
             titulo: "Planilha eletrônica",
             descricao:
                 "Fórmulas, gráficos, formatação e importação de dados externos.",
+            link: "/planilha-eletronica",
         },
         {
             icone: <FaFilePowerpoint className="text-orange-600" />,
