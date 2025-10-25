@@ -81,6 +81,7 @@ export default function NocoesDeInformatica() {
             titulo: "Processador de textos",
             descricao:
                 "Criação, edição e formatação de textos e automação de documentos.",
+            link: "/processador-de-textos",
         },
         {
             icone: <FaFileExcel className="text-green-600" />,
